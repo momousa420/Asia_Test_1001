@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class LearnProperty : MonoBehaviour
 {
-    //非靜態屬性使用方法
+    //非靜態屬性使用方式
     //1.定義一個欄位，用於儲存實體資料
     //2.欄位資料類型必須與想存取的非靜態屬性類型相同
     //3.欄位必須存放實體物件 (將物件拖曳至欄位內)
