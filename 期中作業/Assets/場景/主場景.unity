@@ -19043,7 +19043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1675076638}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.7, y: -0.18, z: 3.2622578}
+  m_LocalPosition: {x: -2.585, y: 0.94, z: 3.2622578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1427436172}
@@ -19100,6 +19100,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3.5
   jump: 10
+  checkGroundRadius: 0.1
+  checkGroundOffset: {x: -0.03, y: -0.7, z: 0}
+  keyJump: 273
+  canJumpLayer:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!1 &1819525880
 GameObject:
   m_ObjectHideFlags: 0
@@ -19535,7 +19541,7 @@ GameObject:
   - component: {fileID: 2141291654}
   - component: {fileID: 2141291653}
   - component: {fileID: 2141291655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: "\u5730\u677F"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
