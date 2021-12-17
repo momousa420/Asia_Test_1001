@@ -7,4 +7,9 @@ public class NPC : MonoBehaviour
     [Header("對話系統")]
     public DialogueSystem dialogueSystem;
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        print("嘿!");
+    }
+
 }
