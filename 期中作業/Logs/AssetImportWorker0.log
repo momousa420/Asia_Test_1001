@@ -285,3 +285,4 @@ Received Import Request.
 Start importing Assets/Art/Character/alert_2 1.png using Guid(738994b0d0406784e82efdd41da8c206) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cc690eb60cbf1be8bf5b234923b60f6') in 0.011204 seconds 
   Import took 0.014659 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
