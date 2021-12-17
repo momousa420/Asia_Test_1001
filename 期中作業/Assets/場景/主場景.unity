@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 161036184}
   - component: {fileID: 161036183}
   - component: {fileID: 161036185}
+  - component: {fileID: 161036186}
   m_Layer: 0
   m_Name: NPC_test
   m_TagString: Untagged
@@ -232,6 +233,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.5, y: 2.5}
   m_EdgeRadius: 0
+--- !u!114 &161036186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161036182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d71d2ff4c1472224cbd43082498a6c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataDialogue: {fileID: 11400000, guid: 8274ba7b58ce85c4793308e1f02eeece, type: 2}
+  dialogueSystem: {fileID: 2138396645}
 --- !u!1 &702482887
 GameObject:
   m_ObjectHideFlags: 0
