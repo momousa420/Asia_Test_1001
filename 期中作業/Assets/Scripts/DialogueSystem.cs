@@ -25,6 +25,7 @@ public class DialogueSystem : MonoBehaviour
     private void Start()
     {
         //StartCoroutine(TypeEffect());
+        goDialogue.SetActive(false);
     }
     #endregion
 
