@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     public LayerMask layerTarget;
     [Header("動畫參數")]
     public string parameterWalk = "開關走路";
+    public string parameterAttack = "觸發攻擊";
     [Header("面向目標物件")]
     public Transform target;
     [Header("攻擊距離"), Range(0, 5)]
@@ -80,11 +81,12 @@ public class Enemy : MonoBehaviour
         ani.SetBool(parameterWalk, true);
 
         float distance = Vector3.Distance(target.position, transform.position);
-        print("與目標的距離：" + distance);
+        //print("與目標的距離：" + distance);
 
         if (distance <= attackDistance)
         {
             rig.velocity = Vector3.zero;
+            Attack();
         }
     }
 
@@ -99,8 +101,11 @@ public class Enemy : MonoBehaviour
         }
         else
         {
+            ani.SetTrigger(parameterAttack);
+            timerAttack = 0;
             Collider2D hit = Physics2D.OverlapBox(transform.position + transform.
                 TransformDirection(v3AttackOffset), v3AttackSize, 0, layerTarget);
+            print("攻擊到物件：" + hit.name);
             hit.GetComponent<HurtSystem>().Hurt(attack);
         }
     }
